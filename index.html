@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos</title>
+</head>
+<body>
+    <h1 class="rojo">Manipulación del Dom básica</h1>
+    <input id ="calculo1" placeholder="Escribe algo aquí">
+    <!--onchange, evento cuando agregamos codigo al input muestra el siguiente mensaje-->
+    <input onchange="console.log('Cambió el input')" id ="calculo2" placeholder="Escribe algo aquí">
+    <!--onclick es un evento,en este caso llamamos a la función btnOnClick -->
+    <button id="btnCalcular" onclick="btnOnClick()">Calcular</button>
+    <button id="btnCalcular2">Calcular (AddEventLinstener)</button>
+    <!--Parrafo que utilizaremos para mostrar el resultado-->
+    <p id="result"></p>
+
+    <!--Los formularios utilizan el último botón como que fuera de tipo submit y cuando se presiona se recarga la página-->
+    <!--La acción que hacen por efecto los formularios es cambiar la url, ya que allí van los datos que enviamos-->
+    <form id="formulario">
+
+        <input id ="calculo1_1" placeholder="Escribe algo aquí">
+        <input id ="calculo2_1" placeholder="Escribe algo aquí">
+        <button id="btnCalcular_1">Calcular</button>
+        <!--Esa es la segunda forma de solucionar el problema del formulario
+            <button type="button" id="btnCalcular_1">Calcular</button> -->
+        <p id="result_1"></p>
+
+    </form>
+
+
+    <script src="logica.js"></script>
+</body>
+</html>
